@@ -83,14 +83,14 @@
       onclick="window.location.href='https://docs.google.com/document/d/1wIMKu5OShyfgPxncbOAi5ICqLjReuDSCwN3fmPZQH64';"
     >
       <span>Detach Figma</span>
-      <span>⌥⌘B</span>
+      <span>⌘B</span>
     </button>
     <script>
       document.addEventListener(
         "keydown",
         function (event) {
           var isCommandOrCtrl = event.metaKey || event.ctrlKey;
-          if (isCommandOrCtrl && event.altKey && event.code === "KeyB") {
+          if (isCommandOrCtrl && event.code === "KeyB") {
             event.preventDefault();
             window.location.href =
               "https://docs.google.com/document/d/1wIMKu5OShyfgPxncbOAi5ICqLjReuDSCwN3fmPZQH64";
